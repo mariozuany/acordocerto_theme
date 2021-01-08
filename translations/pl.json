@@ -62,5 +62,7 @@
   "post_sharing_description": "Pokaż udostępnienia wpisu w mediach społecznościowych",
   "community_topic_group_label": "Elementy tematów w społeczności",
   "follow_topic_label": "Obserwuj",
-  "follow_topic_description": "Użytkownicy mogą obserwować wybrany temat"
+  "follow_topic_description": "Użytkownicy mogą obserwować wybrany temat",
+  "show_brand_name_label": "Show Help Center name",
+  "show_brand_name_description": "Display the Help Center name next to the logo"
 }

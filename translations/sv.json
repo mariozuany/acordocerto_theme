@@ -62,5 +62,7 @@
   "post_sharing_description": "Visa delning på sociala medier i inlägg",
   "community_topic_group_label": "Element i communityärenden",
   "follow_topic_label": "Följ",
-  "follow_topic_description": "Användare kan följa ett specifikt ämne"
+  "follow_topic_description": "Användare kan följa ett specifikt ämne",
+  "show_brand_name_label": "Show Help Center name",
+  "show_brand_name_description": "Display the Help Center name next to the logo"
 }

@@ -62,5 +62,7 @@
   "post_sharing_description": "Funktionen zum Teilen auf Social Media in Post anzeigen",
   "community_topic_group_label": "Elemente in Community-Themen",
   "follow_topic_label": "Folgen",
-  "follow_topic_description": "Benutzer können einem bestimmten Thema folgen"
+  "follow_topic_description": "Benutzer können einem bestimmten Thema folgen",
+  "show_brand_name_label": "Show Help Center name",
+  "show_brand_name_description": "Display the Help Center name next to the logo"
 }

@@ -62,5 +62,7 @@
   "post_sharing_description": "Vis ikon til deling af opslag på social medier",
   "community_topic_group_label": "Community-emneelementer",
   "follow_topic_label": "Følg",
-  "follow_topic_description": "Brugere kan følge et specifikt emne"
+  "follow_topic_description": "Brugere kan følge et specifikt emne",
+  "show_brand_name_label": "Show Help Center name",
+  "show_brand_name_description": "Display the Help Center name next to the logo"
 }

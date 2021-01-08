@@ -62,5 +62,7 @@
   "post_sharing_description": "Delen van bericht via sociale media weergeven",
   "community_topic_group_label": "Elementen van communityonderwerp",
   "follow_topic_label": "Volgen",
-  "follow_topic_description": "Gebruikers kunnen een bepaald onderwerp volgen"
+  "follow_topic_description": "Gebruikers kunnen een bepaald onderwerp volgen",
+  "show_brand_name_label": "Show Help Center name",
+  "show_brand_name_description": "Display the Help Center name next to the logo"
 }

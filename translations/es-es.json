@@ -62,5 +62,7 @@
   "post_sharing_description": "Mostrar opción para compartir en redes sociales en la publicación",
   "community_topic_group_label": "Elementos de tema de la comunidad",
   "follow_topic_label": "Seguir",
-  "follow_topic_description": "Los usuarios pueden seguir un tema específico"
+  "follow_topic_description": "Los usuarios pueden seguir un tema específico",
+  "show_brand_name_label": "Show Help Center name",
+  "show_brand_name_description": "Display the Help Center name next to the logo"
 }

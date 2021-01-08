@@ -62,5 +62,7 @@
   "post_sharing_description": "הצג בפוסט שיתוף ברשתות החברתיות",
   "community_topic_group_label": "רכיבי נושא בקהילה",
   "follow_topic_label": "עקוב",
-  "follow_topic_description": "המשתמשים יכולים לעקוב אחרי נושא ספציפי"
+  "follow_topic_description": "המשתמשים יכולים לעקוב אחרי נושא ספציפי",
+  "show_brand_name_label": "Show Help Center name",
+  "show_brand_name_description": "Display the Help Center name next to the logo"
 }
