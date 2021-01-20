@@ -412,7 +412,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
 
     init: function() {
-      console.log(isHome());
+      console.log(AcordoCertoCustomBehaviors.isHome());
       console.log(window.location.pathname.split('/').length);
         if (!AcordoCertoCustomBehaviors.isHome()) {
             hideSearchTagline();
