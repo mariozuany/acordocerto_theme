@@ -126,23 +126,26 @@
   </section>
 </div>
 
-<section">
-    {{#each categories}}
-        <h2>{{name}}</h1>
-            {{#each sections}}
-              {{recent_activity }}
-              {{!-- {{#if articles}}
-                  {{#each articles}}
-                  {{@index}}
-                    {{#if @index '<' 4}}
-                      <a href="{{url}}">{{title}}</a>
-                    {{/if}}
-                  {{/each}}
-              {{/if}} --}}
-              <a href="{{../url}}">Ver tudo de {{name}}</a>
-            {{/each}}
-    {{/each}}
 
+<section class="recent">
+    <h2 class="recent__title md:w-10/12">Adicionado recentemente</h2>
+    <div class="recent__container">
+    {{#each categories}}
+      <div class="box__container">
+        <h3 class="box__category-title">{{name}}</h3>
+            {{#each sections}}
+              {{#if articles}}
+                  {{#each articles}}
+                   <a class="box__article-title" href="{{url}}">{{title}}</a>
+                  {{/each}}
+              {{/if}}
+              <a href="{{../url}}">Ver tudo de {{name}}</a>
+              <a class="box__category-link" href="{{../url}}">Ver tudo sobre {{name}}</a>
+              </div>
+            {{/each}}
+        </div>
+    {{/each}}    
+    </div>
 </section>
 
 <section class="ticket md:w-10/12">
