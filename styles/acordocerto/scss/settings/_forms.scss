@@ -1,0 +1,41 @@
+@import '../settings/spacing';
+@import '../settings/colors';
+@import '../settings/type';
+
+// Input background
+$form-input-background: $white;
+
+// Input Size & Spacing
+$form-input-height: 48px;
+$form-input-padding: 0 ($space * 1.5);
+
+// Input Typography
+$form-input-color-static: $color-text;
+$form-input-color-focus: $color-text;
+$form-input-color-disabled: $grey-mid;
+$form-input-color-error: $color-text;
+$form-input-line-height: $form-input-height;
+$form-input-font-size: 14px;
+
+// Input Borders
+$form-input-border-static: 1px solid $color-text;
+$form-input-border-focus: 1px solid $secondary;
+$form-input-border-disabled: 1px solid $grey-mid;
+$form-input-border-error: 1px solid $form-input-color-error;
+
+// Input Iconography
+$form-input-icon-color-static: $secondary;
+$form-input-icon-color-focus: $secondary;
+$form-input-icon-color-disabled: $grey-mid;
+$form-input-icon-color-error: $form-input-color-error;
+$form-input-icon-size: $space * 1.5;
+
+// Input Placeholders
+$form-input-placeholder-color: $grey-mid;
+$form-input-placeholder-size: 12px;
+$form-input-icon-size: $space * 1.5;
+
+// Textarea specific
+$form-textarea-line-height: $line-height-standard;
+$form-textarea-min-height: $space * 15;
+$form-textarea-padding: $space * 1.5;

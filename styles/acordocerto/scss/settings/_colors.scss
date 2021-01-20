@@ -1,0 +1,31 @@
+/* COLOR DEFINITIONS */
+
+$charcoal: #111111;
+$razzmatazz: #F2226B;
+$jonquil: #F9CC67;
+$green-dark: #3EAA82;
+
+/* GREYSCALE */
+
+$grey-light: #8E8E95;
+$grey-mid: #CCCCCC;
+$off-white: #F7F7F7;
+$white: #FFFFFF;
+$black: #000000;
+
+/* COLOR SWATCHES */
+
+$primary: $razzmatazz;
+$secondary: $jonquil;
+$tertiary: $charcoal;
+
+/* COLOR ASSIGNMENTS */
+
+$color-background-primary: $white;
+$color-background-secondary: $off-white;
+$color-text: $charcoal;
+$color-link: $primary;
+$color-hover: $secondary;
+$color-placeholder: $grey-mid;
+$color-border: $primary;
+$color-disabled: $grey-light;

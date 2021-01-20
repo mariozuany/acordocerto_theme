@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "icons";
+    /* stylelint-disable */
+    src: url("../fonts/icons/icons.eot?382bef442b9183766ff82905219b93f4?#iefix") format("embedded-opentype"),
+url("../fonts/icons/icons.woff2?382bef442b9183766ff82905219b93f4") format("woff2"),
+url("../fonts/icons/icons.woff?382bef442b9183766ff82905219b93f4") format("woff"),
+url("../fonts/icons/icons.ttf?382bef442b9183766ff82905219b93f4") format("truetype"),
+url("../fonts/icons/icons.svg?382bef442b9183766ff82905219b93f4#icons") format("svg");
+    /* stylelint-enable */
+}
+
+i[class^="icon-"]:before,
+i[class*=" icon-"]:before {
+    /* stylelint-disable */
+    font-family: icons;
+    /* stylelint-enable */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+    content: "\f101";
+}
+
+.icon-instagram:before {
+    content: "\f102";
+}
+
+.icon-linkedin:before {
+    content: "\f103";
+}
+
+.icon-twitter:before {
+    content: "\f104";
+}
+
+.icon-youtube:before {
+    content: "\f105";
+}

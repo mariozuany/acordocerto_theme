@@ -1,0 +1,63 @@
+@import '../utils/breakpoints';
+@import '../settings/spacing';
+@import '../settings/z-index';
+
+.fifty-fifty {
+    width: 100%;
+    position: relative;
+    z-index: $z-base;
+
+    @include breakpoint(desktop) {
+        display: flex;
+        margin: 0 (-$space * 2);
+        width: calc(100% + #{$space * 4});
+        align-items: flex-start;
+        justify-content: center;
+
+        &--vertically-centered {
+            align-items: center;
+        }
+
+        &--stretched {
+            align-items: stretch;
+        }
+    }
+
+    &__child {
+        min-width: 0;
+        width: 100%;
+        margin: 0 0 $space * 4 0;
+        position: relative;
+
+        @include breakpoint(desktop) {
+            width: 50%;
+            margin: $space * 2;
+
+            &:last-of-type {
+                margin: $space * 2;
+            }
+        }
+
+        &--flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &--full-height {
+            height: 100%;
+        }
+
+        &--no-margin {
+            margin: 0;
+
+            @include breakpoint(desktop) {
+                margin: 0;
+
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

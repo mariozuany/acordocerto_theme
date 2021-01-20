@@ -1,0 +1,24 @@
+@import '../utils/breakpoints';
+@import '../settings/spacing';
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: $wrapper-max-width;
+    padding: 0 $gutter-width-mobile;
+
+    @include breakpoint(tablet) {
+        padding: 0 $gutter-width-tablet;
+        overflow: visible;
+    }
+
+    @include breakpoint(desktop) {
+        padding: 0 $gutter-width-desktop;
+    }
+
+    &--full-width {
+        max-width: none;
+        padding: 0;
+    }
+}

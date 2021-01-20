@@ -1,0 +1,7 @@
+@import '../settings/animations';
+@import '../settings/colors';
+
+a {
+    transition: color $easing-standard;
+    text-decoration: none;
+}

@@ -1,0 +1,126 @@
+@import '../settings/spacing';
+@import '../settings/colors';
+@import '../settings/fonts';
+@import '../settings/forms';
+@import '../settings/type';
+@import '../settings/animations';
+
+fieldset {
+    margin-bottom: $space;
+}
+
+label {
+    font-family: $font-body;
+    display: block;
+}
+
+/* Align checkboxes, radios, text inputs with their label */
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+    vertical-align: bottom;
+    *vertical-align: baseline;
+}
+
+/* Removing odd button padding/margin in Mozilla */
+input[type="submit"] {
+    cursor: pointer;
+
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+}
+
+select {
+    border: none;
+    border-radius: 0;
+
+    /* For firefox */
+    -moz-appearance: none;
+
+    /* For chrome */
+    -webkit-appearance: none;
+
+    /* For IE10 */
+    &::-ms-expand {
+        display: none;
+    }
+
+    &:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 #000000;
+    }
+}
+
+// Static standard inputs
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+input[type="file"],
+textarea,
+select {
+    transition: background $easing-standard, border $easing-standard, color $easing-standard;
+    background: $form-input-background;
+    padding: $form-input-padding;
+    line-height: $form-input-line-height;
+    height: $form-input-height;
+    font-size: $form-input-font-size;
+    border: $form-input-border-static;
+    width: 100%;
+    color: $form-input-color-static;
+    box-sizing: border-box;
+
+    &:focus {
+        border: $form-input-border-focus;
+        color: $form-input-color-focus;
+    }
+
+    &.error {
+        border: $form-input-border-error;
+        color: $form-input-color-error;
+    }
+
+    &:disabled {
+        border: $form-input-border-disabled;
+        color: $form-input-color-disabled;
+        pointer-events: none;
+
+        &:focus {
+            border: $form-input-border-disabled;
+            color: $form-input-color-disabled;
+        }
+    }
+}
+
+// Textarea
+textarea,
+textarea:focus {
+    width: 100%;
+    padding: $form-textarea-padding;
+    min-height: $form-textarea-min-height;
+    line-height: $form-textarea-line-height;
+    overflow: auto;
+}
+
+/* Placeholder Text (styles the placeholder attribute text) */
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+    color: $form-input-placeholder-color;
+    font-size: $form-input-placeholder-size;
+}
