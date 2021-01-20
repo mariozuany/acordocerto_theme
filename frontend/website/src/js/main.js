@@ -1,6 +1,6 @@
 var AcordoCertoCustomBehaviors = {
     isHome: function() {
-        return window.location.pathname.split('/').length > 3;
+        return window.location.pathname.split('/').length <= 3;
     },
     
     hideSearchTagline: function() {
@@ -10,10 +10,9 @@ var AcordoCertoCustomBehaviors = {
 
     init: function() {
         if (!AcordoCertoCustomBehaviors.isHome()) {
-            hideSearchTagline();
+          AcordoCertoCustomBehaviors.hideSearchTagline();
         }
     }    
-}
+  }
 
-AcordoCertoCustomBehaviors.init();
-
+  AcordoCertoCustomBehaviors.init();

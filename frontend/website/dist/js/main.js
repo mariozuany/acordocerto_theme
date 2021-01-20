@@ -1848,7 +1848,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var AcordoCertoCustomBehaviors = {
   isHome: function isHome() {
-    return window.location.pathname.split('/').length > 3;
+    return window.location.pathname.split('/').length <= 3;
   },
   hideSearchTagline: function hideSearchTagline() {
     var searchTagline = document.querySelector('.search__tagline');
@@ -1856,7 +1856,7 @@ var AcordoCertoCustomBehaviors = {
   },
   init: function init() {
     if (!AcordoCertoCustomBehaviors.isHome()) {
-      hideSearchTagline();
+      AcordoCertoCustomBehaviors.hideSearchTagline();
     }
   }
 };

@@ -84,7 +84,7 @@
       {{pagination}}
     </section>
 
-    {{#if promoted_articles}}
+    {{!-- {{#if promoted_articles}}
       <section class="articles">
         <h2>{{t 'promoted_articles'}}</h2>
         <ul class="article-list promoted-articles">
@@ -104,7 +104,8 @@
           {{/each}}
         </ul>
       </section>
-    {{/if}}
+    {{/if}} --}}
+
   </section>
 
   {{#if help_center.community_enabled}}
@@ -124,6 +125,20 @@
     {{/if}}
   </section>
 </div>
+
+<section>
+    {{#each categories}}
+        <h2>{{category.name}}</h1>
+            {{#each sections}}
+              {{#if articles}}
+                  {{#each articles}}
+                    <a href="{{url}}">{{title}}</a>
+                  {{/each}}
+              {{/if}}
+            {{/each}}
+    {{/each}}
+
+</section>
 
 <section class="ticket md:w-10/12">
     <img class="ticket__image md:w-6/12" src="{{settings.new_ticket_banner__image}}" alt="Imagem ilustrativa da seção">
