@@ -1,0 +1,28 @@
+.igored-vars {
+    // This workaround was necessary
+    // for the SCSS compiler
+    // does not allow any
+    // unused variable
+    // created on manifest.
+    #{$institutional_site_url} {
+        content: 'ignored';
+    }
+    #{$_1_mvac__title} {
+        content: 'ignored';
+    }
+    #{$_2_mvac__title} {
+        content: 'ignored';
+    }
+    #{$_3_mvac__title} {
+        content: 'ignored';
+    }
+    #{$_4_mvac__title} {
+        content: 'ignored';
+    }
+    #{$_5_mvac__title} {
+        content: 'ignored';
+    }
+    #{$_6_mvac__title} {
+        content: 'ignored';
+    }
+}

@@ -387,21 +387,21 @@
       "label": "1_most_viewed_article_category",
       "variables": [
         {
-          "identifier": "1_mvac__title",
+          "identifier": "_1_mvac__title",
           "type": "text",
           "description": "1_mvac__title_description",
           "label": "1_mvac__title_label",
           "value": "Baixa de Pagamento"
         },
         {
-          "identifier": "1_mvac__link",
+          "identifier": "_1_mvac__link",
           "type": "text",
           "description": "1_mvac__link_description",
           "label": "1_mvac__link_description_label",
           "value": "#"
         },
         {
-          "identifier": "1_mvac__icon",
+          "identifier": "_1_mvac__icon",
           "type": "file",
           "description": "1_mvac__icon_description",
           "label": "1_mvac__icon_label"
@@ -412,21 +412,21 @@
       "label": "2_most_viewed_article_category",
       "variables": [
         {
-          "identifier": "2_mvac__title",
+          "identifier": "_2_mvac__title",
           "type": "text",
           "description": "2_mvac__title_description",
           "label": "2_mvac__title_label",
           "value": "Baixa de Pagamento"
         },
         {
-          "identifier": "2_mvac__link",
+          "identifier": "_2_mvac__link",
           "type": "text",
           "description": "2_mvac__link_description",
           "label": "2_mvac__link_description_label",
           "value": "#"
         },
         {
-          "identifier": "2_mvac__icon",
+          "identifier": "_2_mvac__icon",
           "type": "file",
           "description": "2_mvac__icon_description",
           "label": "2_mvac__icon_label"
@@ -437,21 +437,21 @@
       "label": "3_most_viewed_article_category",
       "variables": [
         {
-          "identifier": "3_mvac__title",
+          "identifier": "_3_mvac__title",
           "type": "text",
           "description": "3_mvac__title_description",
           "label": "3_mvac__title_label",
           "value": "Baixa de Pagamento"
         },
         {
-          "identifier": "3_mvac__link",
+          "identifier": "_3_mvac__link",
           "type": "text",
           "description": "3_mvac__link_description",
           "label": "3_mvac__link_description_label",
           "value": "#"
         },
         {
-          "identifier": "3_mvac__icon",
+          "identifier": "_3_mvac__icon",
           "type": "file",
           "description": "3_mvac__icon_description",
           "label": "3_mvac__icon_label"
@@ -462,21 +462,21 @@
       "label": "4_most_viewed_article_category",
       "variables": [
         {
-          "identifier": "4_mvac__title",
+          "identifier": "_4_mvac__title",
           "type": "text",
           "description": "4_mvac__title_description",
           "label": "4_mvac__title_label",
           "value": "Baixa de Pagamento"
         },
         {
-          "identifier": "4_mvac__link",
+          "identifier": "_4_mvac__link",
           "type": "text",
           "description": "4_mvac__link_description",
           "label": "4_mvac__link_description_label",
           "value": "#"
         },
         {
-          "identifier": "4_mvac__icon",
+          "identifier": "_4_mvac__icon",
           "type": "file",
           "description": "4_mvac__icon_description",
           "label": "4_mvac__icon_label"
@@ -487,21 +487,21 @@
       "label": "5_most_viewed_article_category",
       "variables": [
         {
-          "identifier": "5_mvac__title",
+          "identifier": "_5_mvac__title",
           "type": "text",
           "description": "5_mvac__title_description",
           "label": "5_mvac__title_label",
           "value": "Baixa de Pagamento"
         },
         {
-          "identifier": "5_mvac__link",
+          "identifier": "_5_mvac__link",
           "type": "text",
           "description": "5_mvac__link_description",
           "label": "5_mvac__link_description_label",
           "value": "#"
         },
         {
-          "identifier": "5_mvac__icon",
+          "identifier": "_5_mvac__icon",
           "type": "file",
           "description": "5_mvac__icon_description",
           "label": "5_mvac__icon_label"
@@ -512,21 +512,21 @@
       "label": "6_most_viewed_article_category",
       "variables": [
         {
-          "identifier": "6_mvac__title",
+          "identifier": "_6_mvac__title",
           "type": "text",
           "description": "6_mvac__title_description",
           "label": "6_mvac__title_label",
           "value": "Baixa de Pagamento"
         },
         {
-          "identifier": "6_mvac__link",
+          "identifier": "_6_mvac__link",
           "type": "text",
           "description": "6_mvac__link_description",
           "label": "6_mvac__link_description_label",
           "value": "#"
         },
         {
-          "identifier": "6_mvac__icon",
+          "identifier": "_6_mvac__icon",
           "type": "file",
           "description": "6_mvac__icon_description",
           "label": "6_mvac__icon_label"
@@ -537,21 +537,21 @@
       "label": "new_ticket_banner",
       "variables": [
         {
-          "identifier": "new_ticket_banner__title",
+          "identifier": "_new_ticket_banner__title",
           "type": "text",
           "description": "new_ticket_banner__title_description",
           "label": "new_ticket_banner__title_label",
           "value": "Poxa, ainda não encontrou o que estava procurando?"
         },
         {
-          "identifier": "new_ticket_banner__description",
+          "identifier": "_new_ticket_banner__description",
           "type": "text",
           "description": "new_ticket_banner__description_description",
           "label": "new_ticket_banner__description_label",
           "value": "Fica sussa, estamos prontos pra te ajudar! Abra um chamado com o nosso super time de atendimento que vamos te responder o mais rápido possível! :)"
         },
         {
-          "identifier": "new_ticket_banner__image",
+          "identifier": "_new_ticket_banner__image",
           "type": "file",
           "description": "new_ticket_banner__image_description",
           "label": "new_ticket_banner__image_label"
