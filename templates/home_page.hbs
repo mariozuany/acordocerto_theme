@@ -133,9 +133,9 @@
               {{#if articles}}
                   {{#each articles}}
                   {{@index}}
-                    {{#ifLt @index 3}}
+                    {{#lt @index 3}}
                       <a href="{{url}}">{{title}}</a>
-                    {{/ifLt}}
+                    {{/lt}}
                   {{/each}}
               {{/if}}
               <a href="{{../url}}">Ver tudo de {{name}}</a>
