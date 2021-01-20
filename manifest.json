@@ -370,6 +370,18 @@
           "value": true
         }
       ]
+    },
+    {
+      "label": "header_options",
+      "variables": [
+        {
+          "identifier": "institutional_site_url",
+          "type": "text",
+          "description": "institutional_site_url",
+          "label": "institutional_site_url_label",
+          "value": "https://www.acordocerto.com.br/"
+        }
+      ]
     }
   ]
 }
