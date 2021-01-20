@@ -133,7 +133,7 @@
               {{#if articles}}
                   {{#each articles}}
                   {{@index}}
-                    {{#if @index <= 4}}
+                    {{#lt @index 3}}
                       <a href="{{url}}">{{title}}</a>
                     {{#/if}}
                   {{/each}}
