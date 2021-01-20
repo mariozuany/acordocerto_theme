@@ -398,4 +398,25 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+
+  // AcordoCerto Custom Scripts
+  var AcordoCertoCustomBehaviors = {
+    isHome: function() {
+        return window.location.pathname.split('/').length > 3;
+    },
+    
+    hideSearchTagline: function() {
+        var searchTagline = document.querySelector('.search__tagline');
+        searchTagline.style.display = 'none'
+    },
+
+    init: function() {
+        if (!AcordoCertoCustomBehaviors.isHome()) {
+            hideSearchTagline();
+        }
+    }    
+  }
+
+  AcordoCertoCustomBehaviors.init();
 });
