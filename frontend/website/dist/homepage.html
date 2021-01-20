@@ -33,7 +33,9 @@
 
 		<div class="search">
 		    <h2 class="search__tagline">Como podemos te ajudar hoje?</h2>
-		    <input class="search__input" type="text" placeholder="Busque por tema, por exemplo: cadastro">
+		    <!-- <input class="search__input" type="text" placeholder="Busque por tema, por exemplo: cadastro"> -->
+
+		    <form role="search" class="search__form" data-search="" data-instant="true" autocomplete="off" action="/hc/pt-br/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓"><input type="search" name="query" id="query" placeholder="Busque por tema, por exemplo: cadastro" autocomplete="off" aria-label="Busque por tema, por exemplo: cadastro"></form>
 		</div>
 
 		
@@ -296,6 +298,6 @@
 		<script src="js/main.js"></script>
 
 
-		<script src="js/homepage.js"></script>
+		<!-- <script src="js/homepage.js"></script> -->
 	</body>
 </html>

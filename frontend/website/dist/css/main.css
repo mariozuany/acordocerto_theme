@@ -506,7 +506,9 @@ i[class*=" icon-"]:before {
     cursor: pointer;
     font-weight: 400;
     color: #135DF5; }
-  .footer p, .footer p a, .footer p strong {
+  .footer p,
+  .footer p a,
+  .footer p strong {
     color: #9B9B9B;
     line-height: 20px;
     font-size: 16px;
@@ -2100,7 +2102,7 @@ body {
     @media only screen and (min-width: 768px) {
       .search__tagline {
         font-size: 2.8rem; } }
-  .search .search__input {
+  .search .search__form input[type="search"] {
     color: #333333;
     border-radius: 2rem;
     width: 100%;
@@ -2113,7 +2115,7 @@ body {
     background-repeat: no-repeat;
     background-position: center right 2rem; }
     @media only screen and (min-width: 768px) {
-      .search .search__input {
+      .search .search__form input[type="search"] {
         font-size: 1rem;
         width: 60%;
         padding: 2rem; } }
