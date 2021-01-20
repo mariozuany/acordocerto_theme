@@ -1,7 +1,7 @@
 {
   "name": "Copenhagen",
   "author": "Zendesk",
-  "version": "2.7.6",
+  "version": "2.7.7",
   "api_version": 2,
   "default_locale": "pt-br",
   "settings": [
@@ -554,7 +554,7 @@
           "identifier": "new_ticket_banner__image",
           "type": "file",
           "description": "new_ticket_banner__image_description",
-          "label": "new_ticket_banner__image_label",
+          "label": "new_ticket_banner__image_label"
         }
       ]
     },
