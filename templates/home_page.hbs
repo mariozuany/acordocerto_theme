@@ -130,14 +130,15 @@
     {{#each categories}}
         <h2>{{name}}</h1>
             {{#each sections}}
-              {{#if articles}}
+              {{recent_activity scope='section'}}
+              {{!-- {{#if articles}}
                   {{#each articles}}
                   {{@index}}
                     {{#if @index '<' 4}}
                       <a href="{{url}}">{{title}}</a>
                     {{/if}}
                   {{/each}}
-              {{/if}}
+              {{/if}} --}}
               <a href="{{../url}}">Ver tudo de {{name}}</a>
             {{/each}}
     {{/each}}
