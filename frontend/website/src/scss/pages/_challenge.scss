@@ -1,0 +1,176 @@
+// @import '../utils/grid-debugger';
+@import '../settings/columns';
+body {
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    &::before {
+        content: '';
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.69);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.grid-container {
+    max-width: calc(100vw - 2rem);
+    margin: 0 auto;
+    display: flex;
+    @include breakpoint(desktop) {
+        max-width: 960px;
+    }
+}
+
+.brand {
+    width: 100%;
+    margin: 16px 0;
+    @include breakpoint(desktop) {
+        width: $desktop-3-12-col;
+        margin: 64px 0 32px;
+        display: flex;
+    }
+    &--logo {
+        height: 50px;
+    }
+}
+
+.page {
+    &--content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+        @include breakpoint(desktop) {
+            width: $desktop-9-12-col;
+            margin-left: calc(45rem / 12 * 4.105);
+        }
+    }
+    &--headline {
+        display: flex;
+        flex-direction: column;
+        margin: 32px 0;
+        width: 100%;
+        @include breakpoint(desktop) {
+            width: $desktop-6-12-col;
+        }
+    }
+    &--tagline {
+        color: $white;
+        font-size: 55px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 64px;
+        margin: 0 0 16px 0;
+    }
+    &--introduction {
+        color: $white;
+        font-size: 16px;
+        letter-spacing: 0.53px;
+        line-height: 23px;
+    }
+}
+
+.article-list--container {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 2rem 0;
+    @include breakpoint(desktop) {
+        width: 100%;
+        height: 370px;
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+.article-list {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    height: auto;
+    @include breakpoint(desktop) {
+        position: absolute;
+        justify-content: flex-start;
+    }
+    &.transition {
+        transition: transform $easing-standard;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .article-list.transition {
+        transition: none;
+    }
+}
+
+.article {
+    // width: calc(45rem / 6 * 2.6999);
+    display: inline-block;
+    width: calc(100vw - 2rem);
+    margin: 0 2rem 0 0;
+    
+    @include breakpoint(desktop) {
+        width: $desktop-3-12-col;
+        margin: 0 24px 0 0;
+
+    }
+    &.active .image-container::after {
+        animation: loaderline linear $speed-standard infinite;
+        width: 100%;
+        height: 2px;
+        background: $green-dark;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+    }
+    &:hover .image-container::after {
+        animation-play-state: paused;
+    }
+    &--title {
+        color: $white;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0.6px;
+        line-height: 21px;
+        margin: 0 0 9px 0;
+    }
+    &--excerpt {
+        color: $white;
+        font-size: 13px;
+        letter-spacing: 0.43px;
+        line-height: 20px;
+    }
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    margin: 0 0 25px 0;
+    border-radius: 0 28px 0 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@keyframes loaderline {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}

@@ -1,0 +1,106 @@
+@import '../utils/breakpoints';
+@import '../settings/type';
+@import '../settings/fonts';
+@import '../settings/colors';
+@import '../settings/spacing';
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin-top: 0;
+    line-height: $line-height-reduced;
+    font-family: $font-heading;
+    margin-bottom: $space * 2;
+    font-weight: $font-weight-bold;
+    color: $color-text;
+    letter-spacing: 0;
+}
+
+.h1 {
+    font-size: 30px;
+
+    @include breakpoint(tablet) {
+        font-size: 50px;
+    }
+
+    @include breakpoint(desktop) {
+        font-size: 62px;
+    }
+}
+
+.h2 {
+    font-size: 24px;
+
+    @include breakpoint(desktop) {
+        font-size: 42px;
+    }
+}
+
+.h3 {
+    font-size: 24px;
+
+    @include breakpoint(desktop) {
+        font-size: 32px;
+    }
+}
+
+.h4 {
+    font-size: 22px;
+
+    @include breakpoint(desktop) {
+        font-size: 28px;
+    }
+}
+
+.h5 {
+    font-size: 18px;
+
+    @include breakpoint(desktop) {
+        font-size: 22px;
+    }
+}
+
+.h6 {
+    font-size: 16px;
+
+    @include breakpoint(desktop) {
+        font-size: 18px;
+    }
+}
+
+.p,
+.ul,
+.ol,
+.pre,
+.blockquote {
+    margin-bottom: $space * 2;
+}
+
+.hr {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $grey-mid;
+    height: 1px;
+    width: 100%;
+    margin: ($space * 2) 0;
+}
+
+.strong {
+    font-weight: $font-weight-bold;
+}
+
+.em {
+    font-style: italic;
+}
+
+.p {
+    font-family: $font-body;
+    line-height: $line-height-standard;
+}
+
+.caption {
+    font-size: 0.8rem;
+}

@@ -1,0 +1,45 @@
+@import '../settings/colors';
+@import '../settings/fonts';
+@import '../settings/type';
+@import '../utils/breakpoints';
+
+html {
+    min-height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    width: 100vw;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    color: $color-text;
+    font-family: $font-body;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-standard;
+    background-color: $color-background-primary;
+    font-size: $font-size-mobile;
+
+    @include breakpoint(tablet) {
+        font-size: $font-size-tablet;
+    }
+
+    @include breakpoint(desktop) {
+        font-size: $font-size-desktop;
+    }
+
+    &.sticky-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+
+        main {
+            flex-grow: 1;
+        }
+    }
+}

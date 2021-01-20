@@ -1,0 +1,78 @@
+@import '../settings/colors';
+@import '../settings/spacing';
+@import '../settings/animations';
+
+$button-height: 48px;
+$button-min-width: 182px;
+$button-border-width: 1px;
+$button-font-size: 18px;
+$button-icon-size: 12px;
+
+.button {
+    transition: background $easing-standard, color $easing-standard, border $easing-standard;
+    height: $button-height;
+    padding: $space * 2;
+    border: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: $button-min-width;
+    font-size: 18px;
+
+    &__icon {
+        font-size: $button-icon-size;
+
+        &--large {
+            font-size: $button-icon-size * 2;
+        }
+    }
+
+    &--primary {
+        background-color: $primary;
+        color: $white;
+
+        &:hover {
+            background-color: lighten($primary, 10%);
+        }
+    }
+
+    &--secondary {
+        background: transparent;
+        border: $button-border-width solid $secondary;
+        color: $secondary;
+
+        &:hover {
+            background: transparent;
+            border-color: lighten($secondary, 10%);
+        }
+    }
+
+    &--ghost {
+        background: transparent;
+        border: $button-border-width solid $white;
+        color: $white;
+
+        &:hover {
+            background: $white;
+            color: $color-text;
+        }
+    }
+
+    &--disabled {
+        background: $grey-mid;
+        color: $white;
+        cursor: default;
+    }
+
+    &--square {
+        background: $secondary;
+        color: $white;
+        width: $button-height * 2;
+        height: $button-height * 2;
+        font-size: $button-icon-size * 2;
+
+        &:hover {
+            background: darken($secondary, 10%);
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import '../../settings/colors';
+
+.paging-info {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    text-align: center;
+    background: $white;
+    max-width: 192px;
+    z-index: 1;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+
+    &--has-arrows {
+        display: flex;
+    }
+
+    &:before {
+        position: absolute;
+        content: '';
+        display: block;
+        left: 0;
+        text-align: center;
+        right: 0;
+        height: 20px;
+        width: 1px;
+        background-color: rgba(142, 142, 149, 0.1);
+        margin: 0 auto;
+        top: 14px;
+        z-index: 2;
+    }
+
+    &__current-slide,
+    &__total-slides {
+        background: $white;
+        position: relative;
+        display: inline-block;
+        height: 48px;
+        line-height: 48px;
+        width: 48px;
+        font-size: 1rem;
+    }
+
+    &__current-slide {
+        color: $color-text;
+        letter-spacing: 0;
+    }
+
+    &__total-slides {
+        color: $color-text;
+        letter-spacing: 0;
+    }
+
+    &__arrow {
+        position: relative;
+        bottom: 0;
+    }
+}

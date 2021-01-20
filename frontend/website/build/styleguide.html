@@ -1,0 +1,191 @@
+<!-- include "meta-head.html" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kooba</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement("picture");
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"
+            integrity="sha256-iT+n/otuaeKCgxnASny7bxKeqCDbaV1M7VdX1ZRQtqg="
+            crossorigin="anonymous"
+            async></script>
+
+</head>
+
+
+<body>
+<!-- include "partial-header.html" -->
+<header class="header">
+	<div class="wrapper">
+	</div>
+</header>
+
+
+<main>
+	<div class="wrapper wrapper--wrap">
+		<div class="skin">
+			<a class="skin__link" href="homepage.html">< Back to Home</a>
+		</div>
+
+		<div class="skin">
+			Typography
+		</div>
+
+		<pre>type: heading 1, class: h1</pre>
+		<h1 class="h1">Heading 1</h1>
+
+		<pre>type: heading 2, class: h2</pre>
+		<h2 class="h2">Heading 2</h2>
+
+		<pre>type: heading 3, class: h3</pre>
+		<h3 class="h3">Heading 3</h3>
+
+		<pre>type: heading 4, class: h4</pre>
+		<h4 class="h4">Heading 4</h4>
+
+		<pre>type: heading 5, class: h5</pre>
+		<h5 class="h5">Heading 5</h5>
+
+		<pre>type: heading 6, class: h6</pre>
+		<h6 class="h6">Heading 6</h6>
+
+		<pre>type: body copy, class: p</pre>
+		<p class="p">Font choices as flexible as your imagination</p>
+
+
+		<div class="skin">
+			Colours
+		</div>
+
+		<span class="skin__colour" style="background: #231F20;"></span>
+		<pre>Type: Black, Variable: $black, Value: #231F20</pre>
+
+		<span class="skin__colour" style="background: #FFFFFF;"></span>
+		<pre>Type: White, Variable: $white, Value: #FFFFFF</pre>
+
+
+		<div class="skin">
+			Buttons
+		</div>
+
+		<pre>Primary Button</pre>
+
+		<span class="skin__background">
+			<a class="button" href="#">Primary</a>
+		</span>
+
+		<span class="skin__background">
+			<a class="button button--secondary" href="#">Secondary</a>
+		</span>
+
+		<span class="skin__background">
+			<a class="button button--disabled" href="#">Disabled</a>
+		</span>
+
+		<span class="skin__background">
+			<a class="button button--ghost" href="#">Ghost</a>
+		</span>
+
+		<span class="skin__background skin__background--dark">
+			<a class="button button--ghost-white" href="#">White Ghost</a>
+		</span>
+
+
+		<div class="skin">
+			Icons (Fonts)
+		</div>
+
+		<ul>
+			<li>
+				<i class="icon-facebook"></i>
+				<pre>type: icon for facebook, class: icon-facebook</pre>
+			</li>
+			<br>
+<li>
+				<i class="icon-instagram"></i>
+				<pre>type: icon for instagram, class: icon-instagram</pre>
+			</li>
+			<br>
+<li>
+				<i class="icon-linkedin"></i>
+				<pre>type: icon for linkedin, class: icon-linkedin</pre>
+			</li>
+			<br>
+<li>
+				<i class="icon-twitter"></i>
+				<pre>type: icon for twitter, class: icon-twitter</pre>
+			</li>
+			<br>
+<li>
+				<i class="icon-youtube"></i>
+				<pre>type: icon for youtube, class: icon-youtube</pre>
+			</li>
+			<br>
+
+		</ul>
+
+		<div class="Inputs">
+			Inputs
+		</div>
+
+		<input class="input" type="text" value="" placeholder=""/>
+		<br>
+		<br>
+
+		<input class="input input--selected" type="text" value="" placeholder=""/>
+		<br>
+		<br>
+
+		<input class="input input--validated" type="text" value="" placeholder=""/>
+		<br>
+		<br>
+
+		<input class="input input--error" type="text" value="" placeholder=""/>
+		<br>
+		<br>
+
+		<input class="input input--locked" type="text" value="" placeholder="" disabled/>
+		<br>
+		<br>
+
+		<textarea class="textarea" type="text" value="" placeholder="" rows="5"></textarea>
+		<br>
+		<br>
+
+		<textarea class="textarea textarea--validated" type="text" value="" placeholder="" rows="5"></textarea>
+		<br>
+		<br>
+
+		<textarea class="textarea textarea--error" type="text" value="" placeholder="" rows="5"></textarea>
+		<br>
+		<br>
+
+		<input class="textarea textarea--error" type="radio" value="" />
+		<br>
+		<br>
+
+	</div>
+</main>
+
+<footer class="footer">
+	<div class="wrapper">
+	</div>
+</footer>
+
+
+<!-- All JS actions that are site wide should be in this file -->
+<script src="js/main.js"></script>
+
+
+</body>
+</html>

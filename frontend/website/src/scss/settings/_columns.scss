@@ -1,0 +1,52 @@
+@import '../settings/breakpoints';
+
+$break-points: 'md', 'lg', 'xlg', 'xxlg';
+
+@each $size in $break-points {
+    @for $i from 1 through 12 {
+        $x: $i - 1;
+        .#{$size}\:w-#{$i}\/12 {
+
+            width: 100%;
+
+            @include breakpoint(tablet) {
+                $gutter: 1rem;
+                width: calc((100% / 12) * #{$i});
+                
+                &.gutter-right {
+                    margin-right: calc(#{$gutter});
+                }
+            }
+        
+            @include breakpoint(desktop) {
+                $gutter: 1rem;
+                // $col-size: calc(((#{$desktop} - (11 * #{$gutter})) / 12) * #{$i} + #{$x} * 1rem);
+                width: calc((100% / 12) * #{$i});
+                
+                &.gutter-right {
+                    margin-right: calc(#{$gutter});
+                }
+            }
+        
+            @include breakpoint(large) {
+                $gutter: 1rem;
+                // $col-size: calc(((#{$large} - (11 * #{$gutter})) / 12) * #{$i} + #{$x} * 1rem);
+                width: calc((100% / 12) * #{$i});
+
+                &.gutter-right {
+                    margin-right: calc(#{$gutter});
+                }
+            }
+        
+            @include breakpoint(xlarge) {
+                $gutter: 1rem;
+                // $col-size: calc(((#{$xlarge} - (11 * #{$gutter})) / 12) * #{$i} + #{$x} * 1rem);
+                width: calc((100% / 12) * #{$i});
+
+                &.gutter-right {
+                    margin-right: calc(#{$gutter});
+                }
+            }
+        }
+    }
+}

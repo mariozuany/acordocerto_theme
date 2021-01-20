@@ -1,0 +1,31 @@
+button {
+    user-select: none;
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    font: inherit;
+    cursor: pointer;
+    overflow: visible;
+    border: none;
+    border-radius: 0;
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        border: none;
+    }
+
+    &:focus,
+    &:active {
+        background-color: inherit;
+        color: inherit;
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+}
