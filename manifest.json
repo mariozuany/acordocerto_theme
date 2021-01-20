@@ -1,7 +1,7 @@
 {
   "name": "AcordoCerto",
   "author": "Matheus Serafim, Mario Zuany",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "api_version": 2,
   "default_locale": "pt-br",
   "settings": [
