@@ -130,8 +130,10 @@
     {{#each categories}}
         <h2>{{name}}</h1>
             {{#each sections}}
+            {{@index}}
               {{#if articles}}
                   {{#each articles}}
+                  {{@index}}
                     <a href="{{url}}">{{title}}</a>
                   {{/each}}
               {{/if}}
