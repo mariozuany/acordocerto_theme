@@ -146,9 +146,18 @@
           </div>
         {{/with}}
 
-        <div class="article-more-questions">
+        {{!-- <div class="article-more-questions">
           {{request_callout}}
-        </div>
+        </div> --}}
+
+        <section class="ticket ticket__callout md:w-10/12">            
+            <div class="ticket__content md:w-6/12">
+                <h2 class="ticket__title">{{settings.new_ticket_banner__title}}</h2>
+                <p class="ticket__description">{{settings.new_ticket_banner__description}}</p>
+                {{link 'new_request' class='btn btn--primary'}}
+            </div>
+        </section>
+
         <div class="article-return-to-top">
           <a href="#article-container">
             {{t 'return_to_top'}}
