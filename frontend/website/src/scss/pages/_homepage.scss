@@ -209,6 +209,10 @@
             border-radius: 0.5rem;
             margin: 0 0 0.5rem 0;
             padding: 0.8rem;
+            
+            &:nth-child(n+6) {
+                display: none;
+            }
         }
         &__category-link {
             font-size: 1rem;

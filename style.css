@@ -7609,6 +7609,10 @@ body {
   padding: 0.8rem;
 }
 
+.recent .box__article-title:nth-child(n+6) {
+  display: none;
+}
+
 .recent .box__category-link {
   font-size: 1rem;
   font-weight: bold;
