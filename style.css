@@ -891,34 +891,337 @@ ul {
 
 /***** Footer *****/
 .footer {
-  border-top: 1px solid #ddd;
-  margin-top: 60px;
-  padding: 30px 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  /* acordo do bem */
+}
+
+.footer ul {
+  list-style: none;
+  padding-inline-start: 0;
 }
 
 .footer a {
-  color: lighten($text_color, 20%);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  color: #135DF5;
 }
 
-.footer-inner {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0 5%;
+.footer p,
+.footer p a,
+.footer p strong {
+  color: #9B9B9B;
+  line-height: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer .background-color-grey {
+  background-color: #4A4B4D;
+}
+
+.footer .text-center {
+  text-align: center;
+}
+
+.footer .img {
+  max-width: 100%;
+}
+
+.footer .container-main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+  padding-bottom: 30px;
+}
+
+.footer .row {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
-@media (min-width: 1160px) {
-  .footer-inner {
-    padding: 0;
-    width: 90%;
+.footer .col-md-12 {
+  position: relative;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.footer .box-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer .box-container.type-center-horizontal {
+  justify-content: center;
+}
+
+.footer .icon-logo-ac-branco:before {
+  content: url("../../img/logo-ac-white.svg");
+}
+
+.footer .icon-facebook-cinza:before {
+  content: url("../../img/icon-fcbTwo.svg");
+}
+
+.footer .icon-youtube-cinza:before {
+  content: url("../../img/icon-ytbe.svg");
+}
+
+.footer .icon-twitter-cinza:before {
+  content: url("../../img/icon-twt.svg");
+}
+
+.footer .icon-linkedin-cinza:before {
+  content: url("../../img/icon-lkd.svg");
+}
+
+.footer .icon-instagram-cinza:before {
+  content: url("../../img/icon-instagram.svg");
+}
+
+.footer .icon-logo-ac-branco {
+  width: 150px;
+}
+
+.footer .logo-footer {
+  padding: 40px 0;
+}
+
+.footer .info-footer p,
+.footer .info-footer span {
+  font-size: 13px !important;
+  color: #9B9B9B;
+}
+
+.footer .footer-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .footer-flex .menu-links {
+  width: 550px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-flex .menu-links div {
+  width: 100%;
+  text-align: center;
+}
+
+.footer .footer-flex .menu-links div ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer .footer-flex .menu-links div ul li {
+  margin: 2px;
+  line-height: 44px;
+}
+
+.footer .footer-flex .menu-links div ul li a {
+  width: 100%;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #DBDBDB;
+}
+
+.footer .social-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .social-footer div {
+  width: 550px;
+  margin: 20px 0;
+}
+
+.footer .social-footer div ul li {
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+  margin: 2px;
+}
+
+.footer .social-footer div ul li a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.footer .supporter ul {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.footer .supporter ul li {
+  padding: 2px 8px;
+}
+
+.footer .supporter ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.footer .max-width-banner-acordo-do-bem {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer .banner-acordo-do-bem {
+  position: relative;
+  width: 100%;
+  background: transparent linear-gradient(134deg, #36CCCF 0%, #0098FF 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 22px #00000029;
+  border-radius: 13px;
+  padding: 18px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.footer .banner-acordo-do-bem .banner-aordo-do-bem-title {
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFF;
+}
+
+.footer .banner-acordo-do-bem .banner-acordo-do-bem-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer .banner-acordo-do-bem .banner-acordo-do-bem-box .banner-acordo-do-bem-box-item {
+  width: 50%;
+  text-align: center;
+}
+
+.footer .banner-acordo-do-bem .banner-acordo-do-bem-box .banner-acordo-do-bem-box-item .btn-banner-acordo-do-bem {
+  width: 100%;
+  background-color: #36E0E3;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 30px;
+  line-height: 40px;
+  font-size: 13px;
+  color: #FFF;
+  font-weight: 600;
+  border: none;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.footer .banner-acordo-do-bem .banner-acordo-do-bem-box .banner-acordo-do-bem-box-item img {
+  width: 80%;
+}
+
+.footer .banner-acordo-do-bem .bg-opac {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media (min-width: 360px) {
+  .footer .social-footer div ul li {
+    width: 60px;
   }
 }
 
-.footer-language-selector button {
-  color: lighten($text_color, 20%);
-  display: inline-block;
-  font-weight: 300;
+@media (min-width: 375px) {
+  .footer .banner-acordo-do-bem {
+    padding: 20px 22px;
+  }
+  .footer .banner-acordo-do-bem .banner-aordo-do-bem-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .footer .banner-acordo-do-bem .bg-opac {
+    display: block;
+  }
+  .footer .banner-acordo-do-bem .banner-acordo-do-bem-box .banner-acordo-do-bem-box-item .btn-banner-acordo-do-bem {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 460px) {
+  .footer .supporter ul {
+    max-width: 240px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer .container-main {
+    max-width: 688px;
+  }
+  .footer .col-md-12 {
+    max-width: 100%;
+  }
+  .footer .footer-flex .menu-links {
+    flex-direction: row;
+  }
+  .footer .footer-flex .menu-links div {
+    width: 50%;
+  }
+  .footer .max-width-banner-acordo-do-bem {
+    width: 550px;
+    margin-left: calc(50% - 275px);
+  }
+  .footer .social-footer div ul li {
+    width: 90px;
+  }
+  .footer .banner-acordo-do-bem {
+    margin-top: 0;
+    padding: 28px 40px;
+  }
+  .footer .banner-acordo-do-bem .banner-acordo-do-bem-box .banner-acordo-do-bem-box-item .btn-banner-acordo-do-bem {
+    width: 177px;
+  }
+  .footer .banner-acordo-do-bem .banner-acordo-do-bem-box .banner-acordo-do-bem-box-item img {
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer .container-main {
+    max-width: 960px;
+  }
+  .footer .banner-acordo-do-bem .banner-acordo-do-bem-box {
+    margin-top: -20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer .container-main {
+    max-width: 1120px;
+  }
 }
 
 /***** Breadcrumbs *****/
