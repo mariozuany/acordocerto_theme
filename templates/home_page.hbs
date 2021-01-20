@@ -126,11 +126,11 @@
   </section>
 </div>
 
-<section style="display: none;">
+<section">
     {{#each categories}}
         <h2>{{name}}</h1>
             {{#each sections}}
-              {{recent_activity scope='section'}}
+              {{recent_activity }}
               {{!-- {{#if articles}}
                   {{#each articles}}
                   {{@index}}
