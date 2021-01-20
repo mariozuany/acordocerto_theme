@@ -130,13 +130,15 @@
     {{#each categories}}
         <h2>{{name}}</h1>
             {{#each sections}}
-            {{@index}}
               {{#if articles}}
                   {{#each articles}}
                   {{@index}}
-                    <a href="{{url}}">{{title}}</a>
+                    {{#if @index <= 4}}
+                      <a href="{{url}}">{{title}}</a>
+                    {{#/if}}
                   {{/each}}
               {{/if}}
+              <a href="{{../url}}">Ver tudo de {{name}}</a>
             {{/each}}
     {{/each}}
 
