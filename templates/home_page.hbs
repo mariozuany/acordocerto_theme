@@ -11,6 +11,49 @@
   </div>
 </section> --}}
 
+<section class="top-search md:w-10/12">
+    <h2 class="top-search__title">Assuntos mais buscados</h2>
+
+    <div class="topics">
+        <a href="{{settings.mvac__link_1}}" class="link">
+            <span class="link__icon">
+                <img src="{{settings.mvac__icon_1}}" alt="Ícone de {{settings.mvac__title_1}}">
+            </span>
+            <h3 class="link__title">{{settings.mvac__title_1}}</h3>
+        </a>
+        <a href="{{settings.mvac__link_2}}" class="link">
+            <span class="link__icon">
+                <img src="{{settings.mvac__icon_2}}" alt="Ícone de {{settings.mvac__title_2}}">
+            </span>
+            <h3 class="link__title">{{settings.mvac__title_2}}</h3>
+        </a>
+        <a href="{{settings.mvac__link_3}}" class="link">
+            <span class="link__icon">
+                <img src="{{settings.mvac__icon_3}}" alt="Ícone de {{settings.mvac__title_3}}">
+            </span>
+            <h3 class="link__title">{{settings.mvac__title_3}}</h3>
+        </a>
+        <a href="{{settings.mvac__link_4}}" class="link">
+            <span class="link__icon">
+                <img src="{{settings.mvac__icon_4}}" alt="Ícone de {{settings.mvac__title_4}}">
+            </span>
+            <h3 class="link__title">{{settings.mvac__title_4}}</h3>
+        </a>
+        <a href="{{settings.mvac__link_5}}" class="link">
+            <span class="link__icon">
+                <img src="{{settings.mvac__icon_5}}" alt="Ícone de {{settings.mvac__title_5}}">
+            </span>
+            <h3 class="link__title">{{settings.mvac__title_5}}</h3>
+        </a>
+        <a href="{{settings.mvac__link_6}}" class="link">
+            <span class="link__icon">
+                <img src="{{settings.mvac__icon_6}}" alt="Ícone de {{settings.mvac__title_6}}">
+            </span>
+            <h3 class="link__title">{{settings.mvac__title_6}}</h3>
+        </a>
+    </div>
+</section>
+
 <div class="container">
   <section class="section knowledge-base">
     <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
@@ -81,3 +124,13 @@
     {{/if}}
   </section>
 </div>
+
+<section class="ticket md:w-10/12">
+    <img class="ticket__image md:w-6/12" src="{{settings.new_ticket_banner__image}}" alt="Imagem ilustrativa da seção">
+    
+    <div class="ticket__content md:w-6/12">
+        <h2 class="ticket__title">{{settings.new_ticket_banner__title}}</h2>
+        <p class="ticket__description">{{settings.new_ticket_banner__description}}</p>
+        {{link 'new_request' class='btn btn--primary'}}
+    </div>
+</section>
