@@ -44,16 +44,13 @@
 
 <header class="header">
 	<div class="header__links">
-		<a href="#" class="brand">
-
-			{{!-- <img class="brand__logo" src="../../img/logo-ac-white.svg" alt="Logotipo acordocerto"> --}}
-      <img class="brand__logo" src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
+    {{#link 'help_center' class="brand"}}
+      <img class="brand__logo" src="{{settings.logo}}" alt="Logotipo do {{t 'home_page' name=help_center.name}}">
 			<span class="brand__pagename">{{help_center.name}}</span>
-		</a>
+		{{/link}}
 	
 		<div class="actions">
 			<a class="btn btn--secondary" href="{{settings.institutional_site_url}}">Voltar para o site</a>
-			{{!-- <a class="btn btn--primary" href="#abrir-chamado">Abrir chamado</a> --}}
       {{link 'new_request' class='btn btn--primary'}}
 		</div>
 	</div>
@@ -61,6 +58,5 @@
 
 <div class="search">
     <h2 class="search__tagline">Como podemos te ajudar hoje?</h2>
-    {{!-- <input class="search__input" type="text" placeholder="Busque por tema, por exemplo: cadastro"> --}}
     {{search submit=false instant=settings.instant_search placeholder='Busque por tema, por exemplo: cadastro' class='search__form'}}
 </div>
