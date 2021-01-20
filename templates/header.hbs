@@ -45,14 +45,14 @@
 <header class="header">
 	<div class="header__links">
 		<a href="#" class="brand">
-      
+
 			{{!-- <img class="brand__logo" src="../../img/logo-ac-white.svg" alt="Logotipo acordocerto"> --}}
       <img class="brand__logo" src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
 			<span class="brand__pagename">{{help_center.name}}</span>
 		</a>
 	
 		<div class="actions">
-			<a class="btn btn--secondary" href="{{header_options.institutional_site_url}}">Voltar para o site</a>
+			<a class="btn btn--secondary" href="{{settings.header_options.institutional_site_url}}">Voltar para o site</a>
 			{{!-- <a class="btn btn--primary" href="#abrir-chamado">Abrir chamado</a> --}}
       {{link 'new_request' class='btn btn--primary'}}
 		</div>
