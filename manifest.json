@@ -1,7 +1,7 @@
 {
   "name": "AcordoCerto",
   "author": "AcordoCerto",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "api_version": 2,
   "default_locale": "pt-br",
   "settings": [
@@ -574,6 +574,158 @@
           "description": "partners_section__description_description",
           "label": "partners_section__description_label",
           "value": "Está enfrentando dificuldades com algum parceiro específico? Separamos os artigos por parceiro para facilitar a sua busca ;)"
+        }
+      ]
+    },
+    {
+      "label": "footer_links",
+      "variables": [
+        {
+          "identifier": "footer_links__1_title",
+          "type": "text",
+          "description": "footer_links__1_title_description",
+          "label": "footer_links__1_title_label",
+          "value": "Home"
+        },
+        {
+          "identifier": "footer_links__1_link",
+          "type": "text",
+          "description": "footer_links__1_link_description",
+          "label": "footer_links__1_link_label",
+          "value": "https://www.acordocerto.com.br/"
+        },
+        {
+          "identifier": "footer_links__2_title",
+          "type": "text",
+          "description": "footer_links__2_title_description",
+          "label": "footer_links__2_title_label",
+          "value": "Como funciona"
+        },
+        {
+          "identifier": "footer_links__2_link",
+          "type": "text",
+          "description": "footer_links__2_link_description",
+          "label": "footer_links__2_link_label",
+          "value": "https://www.acordocerto.com.br/#how-to"
+        },
+        {
+          "identifier": "footer_links__3_title",
+          "type": "text",
+          "description": "footer_links__3_title_description",
+          "label": "footer_links__3_title_label",
+          "value": "Dúvidas"
+        },
+        {
+          "identifier": "footer_links__3_link",
+          "type": "text",
+          "description": "footer_links__3_link_description",
+          "label": "footer_links__3_link_label",
+          "value": "https://ajuda.acordocerto.com.br/hc/pt-br"
+        },
+        {
+          "identifier": "footer_links__4_title",
+          "type": "text",
+          "description": "footer_links__4_title_description",
+          "label": "footer_links__4_title_label",
+          "value": "Empréstimo"
+        },
+        {
+          "identifier": "footer_links__4_link",
+          "type": "text",
+          "description": "footer_links__4_link_description",
+          "label": "footer_links__4_link_label",
+          "value": "https://emprestimo.acordocerto.com.br/"
+        },
+        {
+          "identifier": "footer_links__5_title",
+          "type": "text",
+          "description": "footer_links__5_title_description",
+          "label": "footer_links__5_title_label",
+          "value": "Blog"
+        },
+        {
+          "identifier": "footer_links__5_link",
+          "type": "text",
+          "description": "footer_links__5_link_description",
+          "label": "footer_links__5_link_label",
+          "value": "https://blog.acordocerto.com.br/"
+        },
+        {
+          "identifier": "footer_links__6_title",
+          "type": "text",
+          "description": "footer_links__6_title_description",
+          "label": "footer_links__6_title_label",
+          "value": "Termos de Uso"
+        },
+        {
+          "identifier": "footer_links__6_link",
+          "type": "text",
+          "description": "footer_links__6_link_description",
+          "label": "footer_links__6_link_label",
+          "value": "#"
+        },
+        {
+          "identifier": "footer_links__7_title",
+          "type": "text",
+          "description": "footer_links__7_title_description",
+          "label": "footer_links__7_title_label",
+          "value": "Política de Privacidade"
+        },
+        {
+          "identifier": "footer_links__7_link",
+          "type": "text",
+          "description": "footer_links__7_link_description",
+          "label": "footer_links__7_link_label",
+          "value": "#"
+        },
+        {
+          "identifier": "footer_links__8_title",
+          "type": "text",
+          "description": "footer_links__8_title_description",
+          "label": "footer_links__8_title_label",
+          "value": "Faça uma doação"
+        },
+        {
+          "identifier": "footer_links__8_link",
+          "type": "text",
+          "description": "footer_links__8_link_description",
+          "label": "footer_links__8_link_label",
+          "value": "https://acordodobem.acordocerto.com.br/"
+        },
+        {
+          "identifier": "footer_links__facebook",
+          "type": "text",
+          "description": "footer_links__facebook_description",
+          "label": "footer_links__facebook_label",
+          "value": "https://www.facebook.com/oficialacordocerto"
+        },
+        {
+          "identifier": "footer_links__youtube",
+          "type": "text",
+          "description": "footer_links__youtube_description",
+          "label": "footer_links__youtube_label",
+          "value": "https://www.youtube.com/channel/UCCMYRKpWD4aC_t3UUz3uaPQ"
+        },
+        {
+          "identifier": "footer_links__instagram",
+          "type": "text",
+          "description": "footer_links__instagram_description",
+          "label": "footer_links__instagram_label",
+          "value": "https://www.instagram.com/acordocerto/"
+        },
+        {
+          "identifier": "footer_links__twitter",
+          "type": "text",
+          "description": "footer_links__twitter_description",
+          "label": "footer_links__twitter_label",
+          "value": "https://www.twitter.com/acordo_certo/"
+        },
+        {
+          "identifier": "footer_links__linkedin",
+          "type": "text",
+          "description": "footer_links__linkedin_description",
+          "label": "footer_links__linkedin_label",
+          "value": "https://www.linkedin.com/company/acordo-certo"
         }
       ]
     }
