@@ -403,7 +403,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // AcordoCerto Custom Scripts
   var AcordoCertoCustomBehaviors = {
     isHome: function() {
-        return window.location.pathname.split('/').length > 3;
+        return window.location.pathname.split('/').length <= 3;
     },
     
     hideSearchTagline: function() {
@@ -415,7 +415,7 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log(AcordoCertoCustomBehaviors.isHome());
       console.log(window.location.pathname.split('/').length);
         if (!AcordoCertoCustomBehaviors.isHome()) {
-            hideSearchTagline();
+          AcordoCertoCustomBehaviors.hideSearchTagline();
         }
     }    
   }
