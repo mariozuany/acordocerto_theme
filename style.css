@@ -7479,6 +7479,10 @@ body {
   }
 }
 
+.top-search .topics a.link {
+  text-decoration: none;
+}
+
 .top-search .topics .link {
   position: relative;
   border-radius: 1rem;
