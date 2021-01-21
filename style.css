@@ -5325,6 +5325,10 @@ body {
   }
 }
 
+.header .actions .btn a {
+  text-decoration: none;
+}
+
 .header .actions .btn--primary {
   background-size: 100%;
   background-image: linear-gradient(#0CD7FB, #135DF5);
@@ -7411,6 +7415,7 @@ body {
 
 .search .search__form input[type="search"] {
   color: #333333;
+  font-weight: normal;
   border-radius: 2rem;
   width: 100%;
   margin: 0 auto;
@@ -7738,6 +7743,10 @@ body {
   }
 }
 
+.ticket.ticket__callout .ticket__content {
+  width: 100%;
+}
+
 .ticket__image {
   object-fit: cover;
   display: none;
@@ -7745,6 +7754,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .ticket__image {
+    width: calc((100% / 12) * 6);
     display: inline;
   }
 }
@@ -7759,6 +7769,7 @@ body {
 @media only screen and (min-width: 768px) {
   .ticket__content {
     padding: 4rem;
+    width: calc((100% / 12) * 6);
   }
 }
 
@@ -7805,6 +7816,10 @@ body {
   .ticket .btn {
     width: 75%;
   }
+}
+
+.ticket .btn a {
+  text-decoration: none;
 }
 
 .ticket .btn--primary {

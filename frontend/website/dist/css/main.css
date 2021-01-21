@@ -738,6 +738,8 @@ body {
         .header .actions .btn {
           padding: 0.6rem 2rem;
           margin: 0 0.5rem; } }
+      .header .actions .btn a {
+        text-decoration: none; }
       .header .actions .btn--primary {
         background-size: 100%;
         background-image: linear-gradient(#0CD7FB, #135DF5);
@@ -1959,6 +1961,7 @@ body {
         font-size: 2.8rem; } }
   .search .search__form input[type="search"] {
     color: #333333;
+    font-weight: normal;
     border-radius: 2rem;
     width: 100%;
     margin: 0 auto;
@@ -2188,6 +2191,8 @@ body {
   @media only screen and (min-width: 768px) {
     .ticket {
       width: calc((100% / 12) * 10); } }
+  .ticket.ticket__callout .ticket__content {
+    width: 100%; }
   .ticket__image {
     -o-object-fit: cover;
     font-family: "object-fit:cover";
@@ -2195,6 +2200,7 @@ body {
     display: none; }
     @media only screen and (min-width: 768px) {
       .ticket__image {
+        width: calc((100% / 12) * 6);
         display: inline; } }
   .ticket__content {
     display: flex;
@@ -2203,7 +2209,8 @@ body {
     padding: 2rem; }
     @media only screen and (min-width: 768px) {
       .ticket__content {
-        padding: 4rem; } }
+        padding: 4rem;
+        width: calc((100% / 12) * 6); } }
   .ticket__title {
     color: #fff;
     font-weight: bold;
@@ -2234,6 +2241,8 @@ body {
     @media only screen and (min-width: 768px) {
       .ticket .btn {
         width: 75%; } }
+    .ticket .btn a {
+      text-decoration: none; }
     .ticket .btn--primary {
       background-size: 100%;
       background-image: linear-gradient(#0CD7FB, #135DF5);

@@ -87,6 +87,10 @@ body {
                 margin: 0 0.5rem;    
             }
 
+            a {
+                text-decoration: none;
+            }
+
 
             &--primary {
                 @include gradientAnimation(#0CD7FB, #135DF5, .3s );
