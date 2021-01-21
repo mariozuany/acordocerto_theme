@@ -230,8 +230,12 @@
             span {
                 overflow: hidden;
                 max-width: 36ch;
-                white-space: nowrap;    
+                white-space: nowrap;
                 text-overflow: ellipsis;
+
+                &:nth-child(n+6) {
+                    display: none;
+                }
             }
 
             &::after {
@@ -247,10 +251,6 @@
             &:hover {
                 box-shadow: 0 26px 32px rgba(7, 35, 92, 0.233);
                 transform: scale3d(1.01, 1.01, 1.01);
-            }
-
-            &:nth-child(n+6) {
-                display: none;
             }
         }
         &__category-link {
