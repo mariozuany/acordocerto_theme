@@ -738,7 +738,7 @@ body {
         .header .actions .btn {
           padding: 0.6rem 2rem;
           margin: 0 0.5rem; } }
-      .header .actions .btn a {
+      .header .actions .btn.a {
         text-decoration: none; }
       .header .actions .btn--primary {
         background-size: 100%;
@@ -2241,7 +2241,7 @@ body {
     @media only screen and (min-width: 768px) {
       .ticket .btn {
         width: 75%; } }
-    .ticket .btn a {
+    .ticket .btn.a {
       text-decoration: none; }
     .ticket .btn--primary {
       background-size: 100%;

@@ -5325,7 +5325,7 @@ body {
   }
 }
 
-.header .actions .btn a {
+.header .actions .btn.a {
   text-decoration: none;
 }
 
@@ -7818,7 +7818,7 @@ body {
   }
 }
 
-.ticket .btn a {
+.ticket .btn.a {
   text-decoration: none;
 }
 
