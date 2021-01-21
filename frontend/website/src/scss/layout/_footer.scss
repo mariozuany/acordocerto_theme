@@ -62,23 +62,24 @@
     .box-container.type-center-horizontal {
         justify-content: center;
     }
+
     .icon-logo-ac-branco:before {
-        content: url('../../img/logo-ac-white.svg')
+        content: url($assets-logo-ac-white-svg);
     }
     .icon-facebook-cinza:before {
-        content: url('../../img/icon-fcbTwo.svg')
+        content: url($assets-icon-fcb-svg);
     }
     .icon-youtube-cinza:before {
-        content: url('../../img/icon-ytbe.svg')
+        content: url($assets-icon-ytbe-svg);
     }
     .icon-twitter-cinza:before {
-        content: url('../../img/icon-twt.svg')
+        content: url($assets-icon-twt-svg);
     }
     .icon-linkedin-cinza:before {
-        content: url('../../img/icon-lkd.svg')
+        content: url($assets-icon-lkd-svg);
     }
     .icon-instagram-cinza:before {
-        content: url('../../img/icon-instagram.svg')
+        content: url($assets-icon-instagram-svg);
     }
     .icon-logo-ac-branco {
         width: 150px;
