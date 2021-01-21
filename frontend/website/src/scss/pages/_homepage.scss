@@ -196,7 +196,7 @@
             margin-bottom: 1rem;
 
             @include breakpoint(tablet) {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
 
         }
@@ -209,7 +209,11 @@
             border-radius: 0.5rem;
             margin: 0 0 0.5rem 0;
             padding: 0.8rem;
-            
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 75ch;
+            white-space: nowrap;
+
             &:nth-child(n+6) {
                 display: none;
             }

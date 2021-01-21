@@ -2085,7 +2085,7 @@ body {
     margin-bottom: 1rem; }
     @media only screen and (min-width: 768px) {
       .recent .box__category-title {
-        font-size: 1.5rem; } }
+        font-size: 1.3rem; } }
   .recent .box__article-title {
     font-size: 1rem;
     color: #333333;
@@ -2094,7 +2094,11 @@ body {
     width: 100%;
     border-radius: 0.5rem;
     margin: 0 0 0.5rem 0;
-    padding: 0.8rem; }
+    padding: 0.8rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 75ch;
+    white-space: nowrap; }
     .recent .box__article-title:nth-child(n+6) {
       display: none; }
   .recent .box__category-link {
