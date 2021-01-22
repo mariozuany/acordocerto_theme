@@ -4902,6 +4902,10 @@ i[class*=" icon-"]:before {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   box-sizing: border-box;
+  border-top: 8px solid #135df5;
+  z-index: 100;
+  position: relative;
+  z-index: 50;
   /* acordo do bem */
 }
 
@@ -7386,6 +7390,27 @@ body {
   }
 }
 
+.breadcrumbs li a {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.article-header .article-title {
+  flex-basis: 100%;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.button.article-vote, .split-button button.article-vote, .section-subscribe button.article-vote, .article-subscribe button.article-vote, .community-follow button.article-vote, .requests-table-toolbar .organization-subscribe button.article-vote, .subscriptions-subscribe button.article-vote, .article-vote.pagination-next-link, .article-vote.pagination-prev-link, .article-vote.pagination-first-link, .article-vote.pagination-last-link {
+  border: 1px solid #0f6fe8;
+  text-align: center;
+  justify-content: center;
+}
+
+.article-comments {
+  margin-bottom: 4rem;
+}
+
 .search {
   display: flex;
   flex-direction: column;
@@ -7573,7 +7598,14 @@ body {
   width: 100%;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
-  padding: 2rem 0 2rem 1rem;
+  padding: 2rem 0 2rem 2rem;
+}
+
+.recent__container:last-child::after {
+  content: '';
+  width: 70px;
+  display: block;
+  min-width: 2rem;
 }
 
 .recent .box__container {
@@ -7632,6 +7664,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -7640,10 +7673,6 @@ body {
   max-width: 36ch;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-
-.recent .box__article-title span:nth-child(n+6) {
-  display: none;
 }
 
 .recent .box__article-title::after {
@@ -7659,6 +7688,10 @@ body {
 .recent .box__article-title:hover {
   box-shadow: 0 26px 32px rgba(7, 35, 92, 0.233);
   transform: scale3d(1.01, 1.01, 1.01);
+}
+
+.recent .box__article-title:nth-child(n+6) {
+  display: none;
 }
 
 .recent .box__category-link {
