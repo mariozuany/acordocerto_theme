@@ -1,110 +1,194 @@
 body {
-    background-color: #F4F7FB;
+  background-color: #F4F7FB;
 }
 
 .header {
+  background: #082D75;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  @include breakpoint(tablet) {
+    background: transparent;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
     background: #082D75;
-    position: sticky;
-    top: 0;
-    z-index: 20;
+    justify-content: space-between;
+    overflow: hidden;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding: 1rem;
+    box-shadow: 0 0 32px #072C7252;
+    align-items: center;
 
     @include breakpoint(tablet) {
-        background: transparent;
+      flex-direction: row;
+      padding: 2rem;
+    }
+  }
+
+  .brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    //margin-bottom: 1.5rem;
+
+    @include breakpoint(tablet) {
+      flex-direction: column;
+      margin-bottom: 0;
     }
 
-    &__links {
-        display: flex;
-        flex-direction: column;
+
+    &__logo {
+
+    }
+
+    &__pagename {
+      color: #fff;
+      border-left: 1px solid #fff;
+      padding: 0 0.5rem;
+      margin: 0.5rem 0.5rem 0;
+      line-height: 0.8rem;
+      @include breakpoint(tablet) {
+        margin: 0 0 0 3.2rem;
+        border-left: none;
+        padding: 0;
+      }
+    }
+  }
+
+  .actions {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    background: #0a2d75;
+    padding: 1rem 1rem 1rem;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+
+    @include breakpoint(tablet) {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+    }
+
+    &.active {
+      display: flex;
+    }
+
+    a.btn {
+      text-decoration: none;
+    }
+
+    .btn {
+      font-weight: bold;
+      color: #fff;
+      border-radius: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.6rem 2rem;
+      margin: 0.5rem;
+      overflow: hidden;
+
+      @include breakpoint(tablet) {
+        padding: 0.6rem 2rem;
+        margin: 0 0.5rem;
+      }
+
+      &.a {
+        text-decoration: none;
+      }
+
+
+      &--primary {
+        @include gradientAnimation(#0CD7FB, #135DF5, .3s);
+      }
+
+      &--secondary {
+        border: 2px solid #FFFFFF;
         background: #082D75;
-        justify-content: space-between;
-        overflow: hidden;
-        border-bottom-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
-        padding: 1rem;
-        box-shadow: 0px 0px 32px #072C7252;
-        align-items: center;
-
-        @include breakpoint(tablet) {
-            flex-direction: row;
-            padding: 2rem;
-        }
+      }
     }
 
-    .brand {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: 1.5rem;
+  }
 
-        @include breakpoint(tablet) {
-            flex-direction: column;
-            margin-bottom: 0;
-        }
-
-
-        &__logo {
-
-        }
-        &__pagename {
-            color: #fff;
-            margin: 0 0 0 1rem;
-            border-left: 1px solid #fff;
-            padding: 0 0.5rem;
-            margin: 0.5rem 0.5rem 0;
-            line-height: 0.8rem;
-            
-            @include breakpoint(tablet) {
-                margin: 0 0 0 3.2rem;
-                border-left: none;
-                padding: 0;
-            }
-
-        }
+  .button-menu {
+    padding: 20px;
+    background-color: transparent;
+    z-index: 10;
+    height: 55px;
+    cursor: pointer;
+      @include breakpoint(tablet) {
+        height: inherit;
+        padding: 0;
+      }
     }
 
-    .actions {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  .menu-hamburguer {
+    position: relative;
+    width: 100%;
+    margin-right: 20px;
+  }
 
-        @include breakpoint(tablet) {
-            flex-direction: row;
-        }
+  .icon-active .menu-hamburguer {
+    margin-bottom: 24px;
+  }
 
-        a.btn {
-            text-decoration: none;
-        }
+  .icon-active .actions {
+    display: block;
+  }
 
-        .btn {
-            font-weight: bold;
-            color: #fff;
-            border-radius: 32px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0.6rem 2rem;
-            margin: 0.5rem;
-            overflow: hidden;
+  .menu-hamburguer .menu-1,
+  .menu-hamburguer .menu-2,
+  .menu-hamburguer .menu-3 {
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: .2s ease-in-out;
 
-            @include breakpoint(tablet) {
-                padding: 0.6rem 2rem;
-                margin: 0 0.5rem;    
-            }
-
-            &.a {
-                text-decoration: none;
-            }
-
-
-            &--primary {
-                @include gradientAnimation(#0CD7FB, #135DF5, .3s );
-            }
-
-            &--secondary {
-                border: 2px solid #FFFFFF;
-                background: #082D75;
-            }
-        }
-        
+    @include breakpoint(tablet) {
+      display: none;
     }
+  }
+
+  .menu-hamburguer .menu-1 {
+    top: 0;
+  }
+
+  .menu-hamburguer .menu-2 {
+    top: 8px;
+  }
+
+  .menu-hamburguer .menu-3 {
+    top: 16px;
+  }
+
+  .icon-active .menu-hamburguer .menu-1 {
+    transform: rotate(45deg);
+    width: 25.45px;
+    margin-top: 8px;
+  }
+
+  .icon-active .menu-hamburguer .menu-2,
+  .icon-active .menu-hamburguer .menu-3 {
+    transform: rotate(-45deg);
+    width: 25.45px;
+  }
+
+  .icon-active .menu-hamburguer .menu-3 {
+    margin-top: -8px;
+  }
+
 }
